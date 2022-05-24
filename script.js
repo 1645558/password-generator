@@ -51,6 +51,11 @@ var hasSpecial = confirm('Do you want to include any special characters?')
     choices += special
   } else if (!hasSpecial) {
     alert('This would have made it a lot stronger!')
+  } 
+  
+  if (!hasLowercase && !hasUppercase && !hasNumbers && !hasSpecial) {
+    alert('Please select a prompt')
+    return generatePassword();
   }
   console.log(special)
   console.log(input)
