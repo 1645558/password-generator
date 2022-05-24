@@ -12,13 +12,13 @@ function generatePassword() {
 
   if (input >= 8 && input <= 128) {
     //GOOD CODE GOES HERE
+    console.log(input)
   } else {
     alert('Please enter a valid amount of characters')
   }
 
   return "";
 }
-
 
 // Write password to the #password input
 function writePassword() {
@@ -27,7 +27,32 @@ function writePassword() {
 
   passwordText.value = password;
 
+  var lowercase = prompt('Do you want to include lowercase letters?');
+
+  if (lowercase === 'yes') {
+    alert('Sounds good!');
+  } else if (lowercase === 'no') {
+    alert('No problem!')
+  }
+  console.log(lowercase);
+  
+  var uppercase = prompt('Do you want to include any uppercase letters?')
+
+  if (uppercase === 'yes') {
+    alert('Awesome!')
+  } else if (uppercase === 'no') {
+    alert('No worries!')
+  }
+console.log(uppercase)
+
+
+
 }
+
+
+
+
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
