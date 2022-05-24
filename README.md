@@ -14,5 +14,5 @@ generate a password from the prompts you select!
 
 ## Rescources
 - [Live-site](https://1645558.github.io/password-generator/)
-- [Repository]
+- [Repository](https://github.com/1645558/password-generator)
 
