@@ -17,16 +17,6 @@ function generatePassword() {
     alert('Please enter a valid amount of characters')
   }
 
-  return "";
-}
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
   var lowercase = prompt('Do you want to include lowercase letters?');
 
   if (lowercase === 'yes') {
@@ -43,7 +33,37 @@ function writePassword() {
   } else if (uppercase === 'no') {
     alert('No worries!')
   }
-console.log(uppercase)
+  console.log(uppercase)
+
+  var numbers = prompt('Do you want to include numbers?')
+
+  if (numbers === 'yes') {
+    alert('Sweet!')
+  } else if (numbers === 'no') {
+    alert('Unfortunate')
+  }
+
+  var special = prompt('Do you want to include any special characters?')
+
+  if (special === 'yes') {
+    alert('Makes it strong!')
+  } else if (special === 'no') {
+    alert('Nooooo pls noooo')
+  }
+
+  return "";
+
+  
+}
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+  
 
 
 
